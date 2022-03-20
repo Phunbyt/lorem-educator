@@ -7,7 +7,14 @@ class TextControl extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-        onPressed: onPressedHandler, child: const Text('Reset Question'));
+    return Center(
+      child: Column(
+        children: [
+          const Text("The End!"),
+          ElevatedButton(
+              onPressed: onPressedHandler, child: const Text('Reset Question')),
+        ],
+      ),
+    );
   }
 }
